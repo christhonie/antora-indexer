@@ -29,4 +29,6 @@ RUN /usr/local/bin/pkg --targets ${NODE}-${PLATFORM}-${TARGETARCH} dist/antora-i
 FROM docker.io/library/alpine:3.18
 RUN apk add --no-cache libstdc++
 COPY --from=builder /command/antora-indexer.bin /usr/local/bin/antora-indexer
+RUN chmod +x /usr/local/bin/antora-indexer
+
 ENTRYPOINT [ "antora-indexer" ]

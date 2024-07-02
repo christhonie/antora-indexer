@@ -1,5 +1,5 @@
-= Antora Indexer CLI Tool
+= Antora Indexer
 
-This tool generates two JSON files required for the Lunr.js-based https://github.com/vshn/embedded-search-engine/[embedded search engine] to work.
+A containerised tool to generate the JSON files required for the Lunr.js-based https://github.com/christhonie/antora-search-engine/[Antora search engine] to work.
 
 For more information, read the full documentation in the `docs` folder.
